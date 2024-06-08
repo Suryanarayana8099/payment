@@ -12,11 +12,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Navigate to the directory containing the Dockerfile
-                    dir('/path/to/your/docker/directory') {
-                        // Build Docker image
-                        sh 'docker build -t testing .'
-                    }
+                    // Build Docker image
+                    sh 'docker build -t testing .'
                 }
             }
         }
