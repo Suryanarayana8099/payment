@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Checkout the repository
-                git url: 'https://github.com/Suryanarayana8099/user.git', branch: 'main'
+                git url: 'https://github.com/Suryanarayana8099/user.git', branch: 'master'
             }
         }
         stage('Build') {
